@@ -9,13 +9,7 @@ Features must be designed to work seamlessly on both Android and iOS from a sing
 The app must gracefully handle spotty or disconnected network states. Core functionality should be accessible offline, with data synchronized when the connection is restored.
 
 ### III. Responsive & Native-Feeling UI
-The user interface must adapt to various screen sizes, device orientations, and system themes (Dark/Light mode). Interactions should feel native to each platform (e.g., standard navigation gestures).
-
-### IV. Security & Privacy
-Sensitive user data, including authentication tokens, must be stored using platform-native secure storage (iOS Keychain / Android Keystore). Minimum required permissions must be requested only when strictly necessary for the feature.
-
-### V. Battery & Resource Efficiency
-Background processes, animations, and API polling must be optimized to prevent battery drain. Heavy assets and images should be cached locally.
+The user interface must adapt to various screen sizes. Interactions should feel native to each platform (e.g., standard navigation gestures).
 
 ## Target SDKs & Environments
 
@@ -26,8 +20,6 @@ Background processes, animations, and API polling must be optimized to prevent b
 ## Quality Gates & Review Process
 
 - Code must pass automated linting and formatting.
-- Pull Requests require at least one peer approval.
-- Changes must be tested on at least one physical device or simulator for *both* iOS and Android before merging to `main`.
 
 ## Governance
 
